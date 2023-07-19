@@ -1,0 +1,17 @@
+.input-search {
+   display: flex;
+   flex: 1;
+   background: #1e1e21;
+   height: 47px;
+   width: 317px;
+   gap: 100px;
+   border: none;
+   border-radius: 5px;
+   padding-left: 16px;
+   outline: none;
+   color: #c4c4c4;
+}
+.container-input {
+   display: flex;
+   margin: 0 20px;
+}

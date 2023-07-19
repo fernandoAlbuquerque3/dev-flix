@@ -1,0 +1,33 @@
+.container {
+   background: #121214;
+   height: 100vh;
+}
+
+.search-film {
+   margin-left: 20px;
+   color: #c4c4c4;
+}
+.lighbar-container {
+   display: flex;
+   margin-top: 28px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.lighbar-1 {
+   width: 100%;
+   height: 1px;
+   background: #c4c4c4;
+}
+.lighbar-2 {
+   width: 100%;
+   height: 1px;
+   background: #c4c4c4;
+}
+
+.tedencias {
+   margin: 0 15px;
+   color: #fff;
+   font-weight: 500;
+}
