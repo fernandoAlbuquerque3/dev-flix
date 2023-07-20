@@ -1,8 +1,3 @@
-.container {
-   background: #121214;
-   height: 100vh;
-}
-
 .search-film {
    margin-left: 20px;
    color: #c4c4c4;
@@ -30,4 +25,40 @@
    margin: 0 15px;
    color: #fff;
    font-weight: 500;
+}
+.list-films {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.list-films article {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   border-radius: 10px;
+}
+.list-films article p {
+   font-weight: bold;
+   color: #4a3799;
+   font-size: 16px;
+   margin-top: 8px;
+   margin-bottom: 9px;
+}
+
+.list-films img {
+   max-width: 196px;
+   min-height: 298px;
+   border-radius: 9px;
+   cursor: pointer;
+}
+
+.list-films article span {
+   color: #7c7c8a;
+   font-weight: 700;
+}
+.date-heart {
+   margin-bottom: 50px;
 }
