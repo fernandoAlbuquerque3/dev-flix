@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react"
-import "./home.css"
-import apiServices from "../../services/apiService"
 import { format } from "date-fns"
+import { ptBR } from "date-fns/locale"
+import apiServices from "../../services/apiService"
+import "./home.css"
+
 import Header from "../../components/Header"
 import Input from "../../components/Input"
-import { ptBR } from "date-fns/locale"
 
 interface ApiProps {
    id: number
@@ -24,7 +25,7 @@ function Home() {
                page: 1,
             },
          })
-         setFilmes(response.data.results.slice(0, 15))
+         setFilmes(response.data.results.slice(0, 10))
       }
       loadFilms()
    }, [])
@@ -35,9 +36,9 @@ function Home() {
          <p className="search-film">Pesquisar Filme:</p>
          <Input />
          <div className="lighbar-container">
-            <div className="lighbar-1"></div>
+            <div className="lighbar-1" />
             <h2 className="tedencias">Tedencias</h2>
-            <div className="lighbar-2"></div>
+            <div className="lighbar-2" />
          </div>
 
          <div className="list-films">
@@ -52,7 +53,7 @@ function Home() {
                      <span className="date-poster">
                         {format(
                            new Date(filme.release_date),
-                           "dd 'de' MMMM 'de' yyyy",
+                           "d 'de' MMMM 'de' yyyy",
                            {
                               locale: ptBR,
                            }

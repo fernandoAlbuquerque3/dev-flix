@@ -1,10 +1,14 @@
+.container {
+   max-width: 100%;
+}
+
 .search-film {
-   margin-left: 20px;
+   margin-left: 1.25rem;
    color: #c4c4c4;
 }
 .lighbar-container {
    display: flex;
-   margin-top: 28px;
+   margin: 1.75rem 30px;
    flex-direction: row;
    justify-content: center;
    align-items: center;
@@ -24,7 +28,6 @@
 .tedencias {
    margin: 0 15px;
    color: #fff;
-   font-weight: 500;
 }
 .list-films {
    margin-top: 20px;
@@ -37,28 +40,31 @@
 .list-films article {
    display: flex;
    flex-direction: column;
-   width: 200px;
+   width: 12.5rem;
    border-radius: 10px;
+   margin-bottom: 3.125rem;
+   cursor: pointer;
 }
 .list-films article p {
    font-weight: bold;
    color: #4a3799;
-   font-size: 16px;
+   font-size: 1rem;
    margin-top: 8px;
    margin-bottom: 9px;
 }
 
 .list-films img {
-   max-width: 196px;
-   min-height: 298px;
+   max-width: 12.25rem;
+   min-height: 18.625rem;
    border-radius: 9px;
    cursor: pointer;
+}
+.list-films img:hover {
+   border: 1px solid #7c7c8a;
+   transition: 0.5s ease-in;
 }
 
 .list-films article span {
    color: #7c7c8a;
    font-weight: 700;
-}
-.date-heart {
-   margin-bottom: 50px;
 }
