@@ -1,0 +1,17 @@
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   background-color: #09090b;
+   padding: 50px;
+   text-align: center;
+}
+
+footer div h3 {
+   color: #c4c4c4;
+   margin-bottom: 10px;
+}
+footer div p {
+   color: #374151;
+}
