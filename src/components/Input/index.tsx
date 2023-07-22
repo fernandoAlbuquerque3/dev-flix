@@ -8,6 +8,9 @@ function Input() {
             type="text"
             placeholder="Ex: Homem-Aranha"
          />
+         <button className="search-button">
+            Pesquisar
+         </button>
       </div>
    )
 }

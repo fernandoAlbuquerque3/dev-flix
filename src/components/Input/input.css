@@ -13,5 +13,21 @@
 }
 .container-input {
    display: flex;
-   margin: 0 20px;
+   margin: 10px 20px;
+   gap: 10px;
+}
+
+.search-button {
+   border: none;
+   background: #4a3799;
+   padding: 14px 10px;
+   border-radius: 7px;
+   cursor: pointer;
+   color: #fff;
+}
+
+.search-button:hover {
+   background: #c4c4c4;
+   color: #4a3799;
+   transition: 0.7 ease-in;
 }
