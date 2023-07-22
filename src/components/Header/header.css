@@ -1,4 +1,4 @@
-.header-container {
+header{
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -8,7 +8,7 @@
    margin-bottom: 15px;
 }
 
-.header-container .title-cine-dev,
+header .title-cine-dev,
 .login-button {
    color: #f1f1f1;
    cursor: pointer;

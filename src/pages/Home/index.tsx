@@ -37,7 +37,7 @@ function Home() {
          <Input />
          <div className="lighbar-container">
             <div className="lighbar-1" />
-            <h2 className="tedencias">Tedencias</h2>
+            <h2 className="tedencias">Tendências</h2>
             <div className="lighbar-2" />
          </div>
 
