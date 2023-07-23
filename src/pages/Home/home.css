@@ -27,44 +27,6 @@
 
 .tedencias {
    margin: 0 15px;
-   color: #fff;
-}
-.list-films {
-   margin-top: 20px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.list-films article {
-   display: flex;
-   flex-direction: column;
-   width: 12.5rem;
-   border-radius: 10px;
-   margin-bottom: 3.125rem;
-   cursor: pointer;
-}
-.list-films article p {
-   font-weight: bold;
-   color: #4a3799;
-   font-size: 1rem;
-   margin-top: 8px;
-   margin-bottom: 9px;
-}
-
-.list-films img {
-   max-width: 12.25rem;
-   min-height: 18.625rem;
-   border-radius: 9px;
-   cursor: pointer;
-}
-.list-films img:hover {
-   border: 1px solid #7c7c8a;
-   transition: 0.5s ease-in;
-}
-
-.list-films article span {
-   color: #7c7c8a;
-   font-weight: 700;
+   color: #7C7C8A;
+   white-space: nowrap;
 }

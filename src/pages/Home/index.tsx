@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react"
-import { format } from "date-fns"
-import { ptBR } from "date-fns/locale"
 import apiServices from "../../services/apiService"
 import "./home.css"
 
 import Header from "../../components/Header"
 import Input from "../../components/Input"
+import ComponentCard from "../../components/ComponentCard"
 
 interface ApiProps {
    id: number
@@ -16,6 +15,7 @@ interface ApiProps {
 
 function Home() {
    const [filmes, setFilmes] = useState<ApiProps[]>([])
+
    useEffect(() => {
       async function loadFilms() {
          const response = await apiServices.get("movie/now_playing", {
@@ -37,30 +37,13 @@ function Home() {
          <Input />
          <div className="lighbar-container">
             <div className="lighbar-1" />
-            <h2 className="tedencias">Tendências</h2>
+            <h3 className="tedencias">Tendências Hoje</h3>
             <div className="lighbar-2" />
          </div>
 
-         <div className="list-films">
+         <div className="list-films-container">
             {filmes.map((filme) => (
-               <article key={filme.id}>
-                  <img
-                     src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`}
-                     alt={filme.title}
-                  />
-                  <p>{filme.title}</p>
-                  <div className="date-heart">
-                     <span className="date-poster">
-                        {format(
-                           new Date(filme.release_date),
-                           "d 'de' MMMM 'de' yyyy",
-                           {
-                              locale: ptBR,
-                           }
-                        )}
-                     </span>
-                  </div>
-               </article>
+               <ComponentCard filme={filme} />
             ))}
          </div>
       </div>
