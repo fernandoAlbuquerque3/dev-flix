@@ -8,17 +8,16 @@
    color: #4a3799;
 }
 .backdrop-path {
-   max-width: 100%;
+   max-width: 600px;
    max-height: 450px;
    border-radius: 10px;
 }
 
 .sinopse-film {
    margin: 20px;
-   padding: 0 20px;
+   padding: 0 30px;
    display: flex;
    color: #4e3f87;
-   text-align: start;
    width: 100%;
 }
 
@@ -32,4 +31,30 @@
    width: 100%;
    margin: 30px;
    padding: 0 30px;
+}
+
+.buttons-container{
+   display: flex;
+   gap: 100px;
+   margin-bottom: 50px;
+ 
+}
+.buttons-container button {
+   padding: 10px;
+   background: #c4c4c4;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+}
+.buttons-container button:hover {
+   background: #4e3f87;
+   color: #ffff;
+   transition: 0.2s ease-in;
+}
+
+@media (max-width: 571px) {
+   .film-details-container {
+      margin: 0 auto;
+      padding: 0 30px;
+   }
 }

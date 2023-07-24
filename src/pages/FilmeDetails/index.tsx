@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import apiServices from "../../services/apiService"
 import { useParams } from "react-router-dom"
-
 import "./filmDetails.css"
 interface ApiProps {
    id: number
@@ -49,7 +48,13 @@ function FilmDetails() {
          />
          <h2 className="sinopse-film">Sinopse:</h2>
          <span className="film-overview">{filme?.overview}</span>
-         <strong className="vote_average">Avaliação: {filme?.vote_average.toFixed(1)} / 10</strong>
+         <strong className="vote_average">
+            Avaliação: {filme?.vote_average.toFixed(1)} / 10
+         </strong>
+         <div className="buttons-container">
+            <button>Ver trailer</button>
+            <button>Salvar</button>
+         </div>
       </div>
    )
 }
