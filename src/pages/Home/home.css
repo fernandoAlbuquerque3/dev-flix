@@ -27,6 +27,26 @@
 
 .tedencias {
    margin: 0 15px;
-   color: #7C7C8A;
+   color: #7c7c8a;
    white-space: nowrap;
+}
+
+.list-films-container {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   margin: 0 150px;
+   gap: 30px;
+}
+
+@media (max-width: 1037px) {
+   .list-films-container {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+@media (max-width: 685px) {
+   .list-films-container {
+      grid-template-columns: 1fr ;
+   }
 }

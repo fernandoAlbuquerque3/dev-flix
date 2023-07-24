@@ -1,12 +1,13 @@
 .list-films {
    margin-top: 20px;
-   display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin: 0 auto;
 }
 
 .list-films article {
+   max-width: 197px;
+   max-height: 365px;
    display: flex;
    flex-direction: column;
    width: 12.5rem;
@@ -40,8 +41,7 @@
    font-size: 14px;
 }
 
-.date-heart {
-   display: flex;
-   align-items: center;
-   gap: 10px;
+a {
+   text-decoration: none;
+   outline: none;
 }

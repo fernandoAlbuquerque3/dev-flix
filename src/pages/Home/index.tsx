@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react"
 import apiServices from "../../services/apiService"
-import "./home.css"
 
-import Header from "../../components/Header"
 import Input from "../../components/Input"
 import ComponentCard from "../../components/ComponentCard"
 
-interface ApiProps {
+import "./home.css"
+export interface ApiProps {
    id: number
    title: string
    poster_path: any
@@ -25,19 +24,18 @@ function Home() {
                page: 1,
             },
          })
-         setFilmes(response.data.results.slice(0, 10))
+         setFilmes(response.data.results.slice(0, 30))
       }
       loadFilms()
    }, [])
 
    return (
       <div className="container">
-         <Header />
          <p className="search-film">Pesquisar Filme:</p>
          <Input />
          <div className="lighbar-container">
             <div className="lighbar-1" />
-            <h3 className="tedencias">Tendências Hoje</h3>
+            <h3 className="tedencias">Tendências Hoje:</h3>
             <div className="lighbar-2" />
          </div>
 
