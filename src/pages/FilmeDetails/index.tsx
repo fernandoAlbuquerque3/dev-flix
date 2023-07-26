@@ -59,7 +59,7 @@ function FilmDetails() {
                   rel="external"
                   href={`https://youtube.com/results?search_query=${filme?.title} Trailer`}
                >
-                  Trailer
+                  Ver trailer
                </a>
             </button>
             <button>Salvar</button>
