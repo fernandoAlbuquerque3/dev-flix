@@ -46,13 +46,22 @@ function FilmDetails() {
             src={`https://image.tmdb.org/t/p/original/${filme?.backdrop_path}`}
             alt={filme?.title}
          />
+
          <h2 className="sinopse-film">Sinopse:</h2>
          <span className="film-overview">{filme?.overview}</span>
          <strong className="vote_average">
             Avaliação: {filme?.vote_average.toFixed(1)} / 10
          </strong>
          <div className="buttons-container">
-            <button>Ver trailer</button>
+            <button>
+               <a
+                  target="blank"
+                  rel="external"
+                  href={`https://youtube.com/results?search_query=${filme?.title} Trailer`}
+               >
+                  Trailer
+               </a>
+            </button>
             <button>Salvar</button>
          </div>
       </div>

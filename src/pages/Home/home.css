@@ -40,13 +40,23 @@
    gap: 30px;
 }
 
-@media (max-width: 1037px) {
+@media (max-width: 1200px) {
+   .list-films-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+}
+@media (max-width: 1100px) {
    .list-films-container {
       grid-template-columns: 1fr 1fr 1fr;
    }
 }
+@media (max-width: 1037px) {
+   .list-films-container {
+      grid-template-columns: 1fr 1fr;
+   }
+}
 @media (max-width: 685px) {
    .list-films-container {
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
    }
 }
