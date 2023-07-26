@@ -17,6 +17,23 @@ function FilmDetails() {
 
    const { id } = useParams()
 
+   function salvarFilme() {
+      const minhaLista: any = localStorage.getItem("@devflix")
+      let filmesSalvos = JSON.parse(minhaLista) || []
+
+      const hasFilme = filmesSalvos.some(
+         (filmesSalvo: any) => filmesSalvo.id === filme?.id
+      )
+
+      if (hasFilme) {
+         console.log("esse filme ja esta na sua lista")
+         return
+      }
+
+      filmesSalvos.push(filme)
+      localStorage.setItem("@devflix", JSON.stringify(filmesSalvos))
+      console.log("filme adicionado com sucesso ")
+   }
    useEffect(() => {
       async function loadFilme() {
          await apiServices
@@ -62,7 +79,7 @@ function FilmDetails() {
                   Ver trailer
                </a>
             </button>
-            <button>Salvar</button>
+            <button onClick={salvarFilme}>Salvar</button>
          </div>
       </div>
    )

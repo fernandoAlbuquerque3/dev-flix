@@ -1,0 +1,75 @@
+.filme-saved-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 40px;
+   border: 1px solid #c4c4c4;
+   border-radius: 20px;
+   list-style: none;
+   padding: 25px;
+}
+.no-have-films-container{
+   display: flex;
+   flex-direction: column;
+}
+.add-film {
+   color: #000;
+   margin: 15px auto;
+   text-align: center;
+   background-color: #c4c4c4;
+   padding: 10px 15px;
+   width: 200px;
+   border-radius: 6px;
+}
+.no-have-films-text {
+   color: rgb(129, 33, 33);
+   font-size: 25px;
+   font-weight: bold;
+}
+.saved-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+.my-films-image{
+   max-width: 200px;
+   border-radius: 7px;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+
+.filme-title {
+   color: #c4c4c4;
+   font-weight: bold;
+}
+.buttons-saved-container {
+   display: flex;
+   flex-direction: column;
+}
+.buttons-saved-container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 20px;
+   padding-top: 15px;
+}
+.remove-film {
+   background: #fff;
+   border: none;
+   padding: 10px 10px;
+   border-radius: 6px;
+   max-width: 100px;
+   cursor: pointer;
+}
+.remove-film:hover{
+   background: rgb(157, 21, 21);
+   color: #fff;
+   transition: 0.5s all;
+}
+.add-film:hover {
+   transition: 0.5s all;
+   color: #fff;
+   background: forestgreen;
+}

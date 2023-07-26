@@ -8,7 +8,9 @@ function Header() {
             <h1 className="title-cine-dev">CineDev</h1>
          </Link>
 
-         <p className="login-button">Meus filmes</p>
+         <Link to={"/favoritos"}>
+            <p className="login-button">Meus filmes</p>
+         </Link>
       </header>
    )
 }

@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import FilmDetails from "./pages/FilmeDetails"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import SavedFilms from "./pages/SavedFilms"
 
 const AppRoutes = () => {
    return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/filme/:id" element={<FilmDetails />} />
+            <Route path="/favoritos" element={<SavedFilms />} />
          </Routes>
          <Footer />
       </BrowserRouter>
