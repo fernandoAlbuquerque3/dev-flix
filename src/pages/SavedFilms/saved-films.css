@@ -3,14 +3,17 @@
    flex-direction: column;
    align-items: center;
    margin-bottom: 40px;
-   border: 1px solid #c4c4c4;
-   border-radius: 20px;
-   list-style: none;
-   padding: 25px;
+   max-width: 100%;
 }
-.no-have-films-container{
+.my-films-text {
+   color: #4e3f87;
+}
+.no-have-films-container {
    display: flex;
    flex-direction: column;
+}
+.saved-container {
+   max-width: 100%;
 }
 .add-film {
    color: #000;
@@ -33,11 +36,20 @@
    justify-content: center;
    align-items: center;
 }
-.my-films-image{
+.my-films-image {
    max-width: 200px;
    border-radius: 7px;
    cursor: pointer;
    margin-bottom: 10px;
+}
+
+.see-film-details {
+   color: #c4c4c4;
+}
+.see-film-details:hover {
+   color: #ffff;
+   border-bottom: 1px solid #c4c4c4;
+   transition: 0.5s all;
 }
 
 .filme-title {
@@ -48,7 +60,7 @@
    display: flex;
    flex-direction: column;
 }
-.buttons-saved-container{
+.buttons-saved-container {
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -63,7 +75,7 @@
    max-width: 100px;
    cursor: pointer;
 }
-.remove-film:hover{
+.remove-film:hover {
    background: rgb(157, 21, 21);
    color: #fff;
    transition: 0.5s all;

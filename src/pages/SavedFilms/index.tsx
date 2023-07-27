@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { ApiProps } from "../Home"
 import { Link } from "react-router-dom"
-import "./saved-films.css"
 import { toast } from "react-toastify"
+import "./saved-films.css"
 function SavedFilms() {
    const [filmes, setFilmes] = useState<ApiProps[]>([])
 
@@ -24,7 +24,7 @@ function SavedFilms() {
 
    return (
       <div className="saved-container">
-         <h1>Meus Filmes</h1>
+         <h1 className="my-films-text">Meus Filmes</h1>
 
          {filmes.length === 0 && (
             <div className="no-have-films-container">
@@ -47,7 +47,12 @@ function SavedFilms() {
                      />
                      <span className="filme-title">{filme.title}</span>
                      <div className="buttons-saved-container">
-                        <Link to={`/filme/${filme.id}`}>Ver detalhes</Link>
+                        <Link
+                           className="see-film-details"
+                           to={`/filme/${filme.id}`}
+                        >
+                           Ver detalhes
+                        </Link>
                         <button
                            onClick={() => filmeRemove(filme.id)}
                            className="remove-film"

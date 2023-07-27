@@ -50,7 +50,6 @@ function FilmDetails() {
             })
             .then((response) => {
                setFilme(response.data)
-               console.log(response.data)
             })
             .catch(() => {
                console.log("filme não encontrado")
