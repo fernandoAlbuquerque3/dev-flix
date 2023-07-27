@@ -1,10 +1,10 @@
-import { useState } from "react"
-import Home from "./pages/Home"
 import AppRoutes from "./routes"
-
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 function App() {
    return (
       <div className="container">
+         <ToastContainer autoClose={3000} />
          <AppRoutes />
       </div>
    )

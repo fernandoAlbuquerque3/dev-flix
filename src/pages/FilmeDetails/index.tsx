@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import apiServices from "../../services/apiService"
 import { useParams } from "react-router-dom"
+import { toast } from "react-toastify"
 import "./filmDetails.css"
 interface ApiProps {
    id: number
@@ -26,13 +27,17 @@ function FilmDetails() {
       )
 
       if (hasFilme) {
-         console.log("esse filme ja esta na sua lista")
+         toast.error("Esse filme já existe na sua lista", {
+            position: "bottom-center",
+         })
          return
       }
 
       filmesSalvos.push(filme)
       localStorage.setItem("@devflix", JSON.stringify(filmesSalvos))
-      console.log("filme adicionado com sucesso ")
+      toast.success("Filme adicionado com sucesso.", {
+         position: "bottom-center",
+      })
    }
    useEffect(() => {
       async function loadFilme() {

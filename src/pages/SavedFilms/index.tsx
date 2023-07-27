@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { ApiProps } from "../Home"
 import { Link } from "react-router-dom"
 import "./saved-films.css"
-
+import { toast } from "react-toastify"
 function SavedFilms() {
    const [filmes, setFilmes] = useState<ApiProps[]>([])
 
@@ -12,7 +12,9 @@ function SavedFilms() {
       })
       setFilmes(filterRemove)
       localStorage.setItem("@devflix", JSON.stringify(filterRemove))
-      console.log("Filme removido com sucesso!")
+      toast.success("Filme removido com sucesso!", {
+         position: "bottom-center",
+      })
    }
 
    useEffect(() => {
